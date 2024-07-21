@@ -13,11 +13,11 @@ export default function App() {
             <p className="text-white w-[50vw] leading-[100px]">
               I&apos;m Brandon - Software Engineer and Student
             </p>
-            <span className="flex items-center px-8 py-4 gap-3 mt-10 rounded-full bg-white font-normal text-black text-3xl">
+            <span className="flex items-center px-8 py-5 gap-3 mt-10 rounded-full bg-white font-normal text-black text-3xl">
               Let&apos;s Talk
               <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
             </span>
-            <div className="flex gap-12 text-3xl mt-10 font-semibold">
+            <div className="flex gap-12 text-2xl mt-10 font-semibold">
               <p className="text-white underline cursor-pointer">LinkedIn</p>
               <p className="text-white underline cursor-pointer">GitHub</p>
             </div>
