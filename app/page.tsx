@@ -29,12 +29,12 @@ export default function App() {
             Hey, I&apos;m Brandon.<br />
             I am a <FlipWords words={words} />.
           </div>
-          <span className="flex items-center px-8 py-5 gap-3 mt-10 rounded-full bg-white font-normal text-black text-3xl pointer-events-auto cursor-pointer hover:bg-[#eb5951] duration-150">
+          <span className="flex items-center px-8 py-5 gap-3 mt-10 rounded-full bg-white font-normal text-black text-3xl pointer-events-auto cursor-pointer hover:bg-[#E0B0FF] duration-150">
             Let&apos;s Talk
             <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
           </span>
           <div className="flex gap-12 text-2xl mt-10 font-semibold pointer-events-auto">
-            <p className="text-white underline cursor-pointer hover:text-[#eb5951] duration-150">
+            <p className="text-white underline cursor-pointer hover:text-[#E0B0FF] duration-150">
               <a
                 href="http://www.linkedin.com/in/brandon-quon"
                 target="_blank"
@@ -43,7 +43,7 @@ export default function App() {
                 LinkedIn
               </a>
             </p>
-            <p className="text-white underline cursor-pointer hover:text-[#eb5951] duration-150">
+            <p className="text-white underline cursor-pointer hover:text-[#E0B0FF] duration-150">
               <a
                 href="http://github.com/bnquon"
                 target="_blank"
@@ -86,12 +86,12 @@ export default function App() {
                   <div className="flex gap-4 mt-[4vh]">
                     {project.liveSiteURL ? (
                       <a href={project.liveSiteURL} target="_blank" rel="noopener noreferrer">
-                        <span className="text-black text-xl rounded-full bg-white w-fit px-4 py-2 hover:bg-[#FFA500] duration-150 cursor-pointer">Live Site</span>      
+                        <span className="text-black text-xl rounded-full bg-white w-fit px-4 py-2 hover:bg-[#E0B0FF] duration-150 cursor-pointer">Live Site</span>      
                       </a>
                     ) : null}
                     {project.githubURL ? (
                       <a href={project.githubURL} target="_blank" rel="noopener noreferrer">
-                        <span className="text-black text-xl rounded-full bg-white w-fit px-4 py-2 hover:bg-[#FFA500] duration-150 cursor-pointer">GitHub</span>      
+                        <span className="text-black text-xl rounded-full bg-white w-fit px-4 py-2 hover:bg-[#E0B0FF] duration-150 cursor-pointer">GitHub</span>      
                       </a>
                     ): null}
                   </div>
