@@ -6,12 +6,12 @@ import { useEffect, useRef, useState } from "react";
 export const BackgroundGradientAnimation = ({
   gradientBackgroundStart = "rgb(0, 0, 0)", // Black
   gradientBackgroundEnd = "rgb(0, 0, 0)", // Black
-  firstColor = "18, 113, 255", // Blue
-  secondColor = "18, 113, 255", // Blue
-  thirdColor = "18, 113, 255", // Blue
-  fourthColor = "18, 113, 255", // Blue
-  fifthColor = "18, 113, 255", // Blue
-  pointerColor = "18, 113, 255", // Blue
+  firstColor = "18, 113, 255",   // Blue
+  secondColor = "56, 123, 255",  // Light Blue
+  thirdColor = "94, 133, 255",   // Slightly Purple Blue
+  fourthColor = "133, 108, 255", // Lavender Blue
+  fifthColor = "181, 88, 255",   // Light Purple
+  pointerColor = "181, 88, 255", // Light Purple
   size = "50%",
   blendingValue = "soft-light",
   children,
@@ -90,7 +90,7 @@ export const BackgroundGradientAnimation = ({
   return (
     <div
       className={cn(
-        "h-screen w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
+        "h-[100vh] w-screen relative overflow-hidden top-0 left-0 bg-[linear-gradient(40deg,var(--gradient-background-start),var(--gradient-background-end))]",
         containerClassName
       )}
     >
