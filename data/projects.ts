@@ -1,4 +1,4 @@
-interface Project {
+export type Project = {
     name: string;
     description: string;
     liveSiteURL: string | null;
@@ -6,7 +6,7 @@ interface Project {
     image: string;
 }
 
-const projects: Project[] = [
+export const projects: Project[] = [
     {
         name: "SFU Club Website",
         description: "Lorem Ipsum",

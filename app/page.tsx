@@ -2,6 +2,7 @@ import React from "react";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
 import "@fortawesome/fontawesome-svg-core/styles.css";
+import { Project, projects } from "@/data/projects";
 import { BackgroundGradientAnimation } from "@/components/gradient";
 import LetterPullup from "@/components/wordReveal";
 
@@ -45,7 +46,7 @@ export default function App() {
 
       {/* About Section */}
       <div className="relative w-screen bg-black flex justify-center">
-        <div className="w-[50vw] h-fit mt-[8vh] flex flex-col border-y-2 border-[#727272] py-10">
+        <div className="w-[50vw] h-fit mt-[8vh] flex flex-col border-y-2 border-[#727272] py-[60px]">
           <LetterPullup words="About Me" delay={0.1} />
           
           <div className="w-1/2 self-end mt-[10vh]">
@@ -59,7 +60,9 @@ export default function App() {
 
       {/* Projects Section */}
       <div className="relative w-screen bg-black flex justify-center">
-        
+        <div className="w-[50vw] border-b-2 border-[#727272] py-[60px]">
+          l<LetterPullup words="Projects" delay={0.1} />
+        </div>
       </div>
     </main>
   );
