@@ -1,4 +1,5 @@
 import React from "react";
+import { SpeedInsights } from "@vercel/speed-insights/next"
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -16,6 +17,7 @@ export default function App() {
 
   return (
     <main>
+      <SpeedInsights />
       <Navbar />
 
       {/* Hero Section */}
