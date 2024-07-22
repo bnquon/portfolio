@@ -1,6 +1,7 @@
 export type Project = {
     name: string;
     description: string;
+    technologies: string;
     liveSiteURL: string | null;
     githubURL: string;
     image: string;
@@ -10,32 +11,36 @@ export const projects: Project[] = [
     {
         name: "SFU Club Website",
         description: "Lorem Ipsum",
+        technologies: "Lorem Ipsum",
         liveSiteURL: "https://sfuea.vercel.app/",
         githubURL: "https://github.com/bnquon/SFUEA",
-        image: "https://placehold.co/600x400"
+        image: "/SfuEAThumbnail.webp"
     },
 
     {
-        name: "SFU Club Website",
+        name: "Astral Adventure",
         description: "Lorem Ipsum",
+        technologies: "Lorem Ipsum",
         liveSiteURL: "https://sfuea.vercel.app/",
         githubURL: "https://github.com/bnquon/SFUEA",
-        image: "https://placehold.co/600x400"
+        image: "/AstralAdventureThumbnail.webp"
     },
 
     {
-        name: "SFU Club Website",
+        name: "CineVerse",
         description: "Lorem Ipsum",
+        technologies: "Lorem Ipsum",
         liveSiteURL: "https://sfuea.vercel.app/",
         githubURL: "https://github.com/bnquon/SFUEA",
-        image: "https://placehold.co/600x400"
+        image: "/CineVerseThumbnail.webp"
     },
 
     {
-        name: "SFU Club Website",
+        name: "FitFolio",
         description: "Lorem Ipsum",
+        technologies: "Lorem Ipsum",
         liveSiteURL: "https://sfuea.vercel.app/",
         githubURL: "https://github.com/bnquon/SFUEA",
-        image: "https://placehold.co/600x400"
+        image: "/FitFolioThumbnail.webp"
     },
 ]
