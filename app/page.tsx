@@ -34,12 +34,14 @@ export default function App() {
                   alt="icon"
                   width={0}
                   height={0}
+                  priority
                   sizes="100vw"
                   style={{ width: "100%", height: "100%" }}
                 ></Image>
               </div>
             </span>
-            I am a&nbsp;<FlipWords words={words} />
+            I am a&nbsp;
+            <FlipWords words={words} />
           </div>
           <span className="flex items-center px-4 py-2 xl:px-8 xl:py-5 gap-3 mt-5 xl:mt-10 rounded-full bg-white font-normal text-black text-lg xl:text-3xl pointer-events-auto cursor-pointer hover:bg-[#E0B0FF] duration-150">
             Let&apos;s Talk
