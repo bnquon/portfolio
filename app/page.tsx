@@ -14,31 +14,6 @@ import { Projects } from "@/components/Projects";
 export default function App() {
   const words = ["student.", "software engineer.", "tutor.", "developer."];
 
-  const projectImageReveal = {
-    initial: { x: 0 },
-    animate: {
-      x: 800,
-      transition: {
-        duration: 1.5,
-        ease: [1, 0, 0, 1],
-        delay: 0.15,
-      },
-    },
-  };
-
-const projectTextReveal = {
-    initial: { y: 100, opacity: 0 },
-    animate: {
-      y: 0,
-      opacity: 1,
-      transition: {
-        duration: 1,
-        ease: "easeOut",
-        delay: 0.15,
-      },
-    },
-  };
-
   return (
     <main>
       <SpeedInsights />
@@ -50,7 +25,16 @@ const projectTextReveal = {
 
         <div className="absolute z-1 inset-0 flex flex-col items-center justify-center pointer-events-none text-white px-4 text-center">
           <div className="text-white w-[60vw] text-8xl font-semibold">
-            <span className="flex justify-center items-center">Hey, I&apos;m Brandon &nbsp; <Image className="rounded-full overflow-hidden" src="/realIcon.png" alt="icon" width={160} height={160}></Image></span>
+            <span className="flex justify-center items-center">
+              Hey, I&apos;m Brandon &nbsp;{" "}
+              <Image
+                className="rounded-full overflow-hidden"
+                src="/realIcon.png"
+                alt="icon"
+                width={160}
+                height={160}
+              ></Image>
+            </span>
             I am a <FlipWords words={words} />
           </div>
           <span className="flex items-center px-8 py-5 gap-3 mt-10 rounded-full bg-white font-normal text-black text-3xl pointer-events-auto cursor-pointer hover:bg-[#E0B0FF] duration-150">
