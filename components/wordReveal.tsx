@@ -26,8 +26,28 @@ export default function LetterPullup({
     }),
   };
 
+  const underlineReveal = {
+    initial: { width: 0 },
+    animate: {
+      width: "100%",
+      transition: {
+        duration: 1,
+        ease: "easeInOut",
+        delay: 0.8,
+      },
+    },
+  }
+
   return (
-    <div className="flex">
+    <div className="flex w-fit relative pb-2 overflow-hidden">
+
+      <motion.div 
+      variants={underlineReveal}
+      initial="initial"
+      whileInView="animate"
+      viewport={{ once: true }}
+      className="w-full h-1 absolute bottom-0 bg-blue-300"></motion.div>
+      
       {letters.map((letter, i) => (
         <motion.h1
           key={i}
