@@ -1,5 +1,5 @@
 import React from "react";
-import { SpeedInsights } from "@vercel/speed-insights/next"
+import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
@@ -12,7 +12,6 @@ import { ContactForm } from "@/components/contactForm";
 import Navbar from "@/components/navbar";
 
 export default function App() {
-
   const words = ["student", "software engineer", "tutor", "developer"];
 
   return (
@@ -82,7 +81,7 @@ export default function App() {
         id="Projects"
         className="relative w-screen bg-black flex justify-center"
       >
-        <div className="w-[60vw] border-b-2 border-[#727272] py-[60px]">
+        <div className="w-[60vw] border-b-2 border-[#727272] py-[80px]">
           l<LetterPullup words="Projects" delay={0.1} />
           {projects.map((project: Project, index) => (
             <div key={index} className="flex mt-[12vh]">
@@ -92,7 +91,7 @@ export default function App() {
                 </p>
                 <p className="text-3xl mt-[6vh]">{project.description}</p>
                 <p className="text-2xl mt-[4vh]">
-                  Technologies Used: {project.technologies}
+                  Technologies: {project.technologies}
                 </p>
               </div>
               <div className="w-1/2 flex flex-col">
@@ -104,14 +103,21 @@ export default function App() {
                   height={0}
                   style={{ width: "100%", height: "100%" }}
                 ></Image>
-                <div className="flex gap-4 mt-[4vh]">
+
+                <div
+                  className="w-full flex gap-8"
+                  style={{
+                    marginTop:
+                      project.githubURL || project.liveSiteURL ? "2vh" : "0",
+                  }}
+                >
                   {project.githubURL ? (
                     <a
                       href={project.githubURL}
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span className="text-black font-medium text-xl rounded-full bg-white w-fit px-4 py-3 hover:bg-[#E0B0FF] duration-150 cursor-pointer">
+                      <span className="text-white font-medium text-2xl hover:text-[#E0B0FF] underline duration-150 cursor-pointer">
                         GitHub
                       </span>
                     </a>
@@ -122,8 +128,8 @@ export default function App() {
                       target="_blank"
                       rel="noopener noreferrer"
                     >
-                      <span className="text-black font-medium text-xl rounded-full bg-white w-fit px-4 py-3 hover:bg-[#E0B0FF] duration-150 cursor-pointer">
-                        Live Site
+                      <span className="text-white font-medium text-2xl hover:text-[#E0B0FF] underline duration-150 cursor-pointer">
+                        Live Website
                       </span>
                     </a>
                   ) : null}

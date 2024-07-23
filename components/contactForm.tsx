@@ -36,6 +36,7 @@ export const ContactForm = () => {
             <div className="w-1/2 flex flex-col">
               <p className="text-2xl font-semibold">Full Name</p>
               <input
+                placeholder="John Doe"
                 name="fullName"
                 type="text"
                 required
@@ -45,6 +46,7 @@ export const ContactForm = () => {
             <div className="w-1/2 flex flex-col">
               <p className="text-2xl font-semibold">Email</p>
               <input
+                placeholder="johndoe@example.com"
                 name="email"
                 type="email"
                 required
@@ -56,6 +58,7 @@ export const ContactForm = () => {
           <div className="w-full flex flex-col">
             <p className="text-2xl font-semibold">Message</p>
             <textarea
+              placeholder="Enter your message here"
               name="message"
               required
               rows={5}
