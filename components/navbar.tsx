@@ -5,7 +5,7 @@ export const Navbar = () => {
 
   return (
     <>
-      <div className="w-full flex justify-center fixed top-[1vh] p-4 z-50">
+      <div className="w-full hidden sm:flex justify-center fixed top-[1vh] p-4 z-50">
         <div className="flex gap-8 justify-between px-4 py-2 h-full w-fit backdrop-filter backdrop-blur-md bg-[#232b2b]/60 rounded-full shadow-lg border border-gray-700/40">
           {sections.map((section, index) => (
             <a href={`#${section}`} key={index}>

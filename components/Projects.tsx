@@ -36,26 +36,31 @@ export const Projects = () => {
       id="Projects"
       className="relative w-screen bg-black flex justify-center"
     >
-      <div className="w-[60vw] py-[80px]">
+      <div className="xl:w-[60vw] w-[95vw] py-[80px]">
         l<LetterPullup words="Projects" delay={0.05} />
         {projects.map((project: Project, index) => (
-          <div key={index} className="flex mt-[12vh]">
+          <div
+            key={index}
+            className="flex xl:flex-row flex-col xl:mt-[12vh] mt-[8vh]"
+          >
             <motion.div
               variants={projectTextReveal}
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              className="box-border w-1/2 flex flex-col text-white pr-10"
+              className="box-border xl:w-1/2 w-full flex flex-col text-white xl:pr-10 gap-6 xl:gap-0 xl:mb-0 mb-4"
             >
-              <p className="text-4xl font-medium">
+              <p className="text-2xl xl:text-4xl font-medium">
                 0{index + 1}. {project.name}
               </p>
-              <p className="text-3xl mt-[6vh]">{project.description}</p>
-              <p className="text-2xl mt-[4vh]">
+              <p className="text-xl xl:text-3xl xl:mt-[6vh]">
+                {project.description}
+              </p>
+              <p className="text-lg xl:text-2xl xl:mt-[4vh]">
                 Technologies: {project.technologies}
               </p>
             </motion.div>
-            <div className="w-1/2 flex flex-col relative">
+            <div className="xl:w-1/2 w-full flex flex-col relative">
               <Image
                 src={project.image}
                 alt="placeholder"
@@ -86,7 +91,7 @@ export const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="text-white font-medium text-2xl hover:text-[#E0B0FF] underline duration-150 cursor-pointer">
+                    <span className="text-white font-medium text-lg xl:text-2xl hover:text-[#E0B0FF] underline duration-150 cursor-pointer">
                       GitHub
                     </span>
                   </a>
@@ -97,7 +102,7 @@ export const Projects = () => {
                     target="_blank"
                     rel="noopener noreferrer"
                   >
-                    <span className="text-white font-medium text-2xl hover:text-[#E0B0FF] underline duration-150 cursor-pointer">
+                    <span className="text-white font-medium text-lg xl:text-2xl hover:text-[#E0B0FF] underline duration-150 cursor-pointer">
                       Live Website
                     </span>
                   </a>

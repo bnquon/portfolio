@@ -4,7 +4,6 @@ import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 
 export const ContactForm = () => {
-
   const formRef = useRef<HTMLFormElement>(null);
   const onSubmit = async (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault();
@@ -29,45 +28,49 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="w-1/2 self-end mt-[10vh] h-[35vh]">
+    <div className="xl:w-1/2 w-full self-end mt-[10vh]">
       <div className="w-full flex flex-col gap-8 px-6 py-8 bg-[#e0e0e0] rounded-lg">
-        <form ref={formRef} onSubmit={onSubmit} className="w-full flex flex-col gap-8">
-          <div className="w-full flex gap-8">
-            <div className="w-1/2 flex flex-col">
-              <p className="text-2xl font-semibold">Full Name</p>
+        <form
+          ref={formRef}
+          onSubmit={onSubmit}
+          className="w-full flex flex-col gap-8"
+        >
+          <div className="w-full flex xl:flex-row flex-col gap-8">
+            <div className="xl:w-1/2 w-full flex flex-col">
+              <p className="text-xl xl:text-2xl font-semibold">Full Name</p>
               <input
                 placeholder="John Doe"
                 name="fullName"
                 type="text"
                 required
-                className="w-full px-2 py-2 outline-none text-xl font-medium"
+                className="w-full xl:px-2 xl:py-2 px-2 py-1 outline-none text-lg xl:text-xl font-medium"
               />
             </div>
-            <div className="w-1/2 flex flex-col">
-              <p className="text-2xl font-semibold">Email</p>
+            <div className="xl:w-1/2 w-full flex flex-col">
+              <p className="text-xl xl:text-2xl font-semibold">Email</p>
               <input
-                placeholder="johndoe@example.com"
+                placeholder="JohnDoe@example.com"
                 name="email"
                 type="email"
                 required
-                className="w-full px-2 py-2 outline-none text-xl font-medium"
+                className="w-full xl:px-2 xl:py-2 px-2 py-1 outline-none text-lg xl:text-xl font-medium"
               />
             </div>
           </div>
 
           <div className="w-full flex flex-col">
-            <p className="text-2xl font-semibold">Message</p>
+            <p className="xl:text-2xl text-xl font-semibold">Message</p>
             <textarea
               placeholder="Enter your message here"
               name="message"
               required
               rows={5}
-              className="w-full px-2 py-2 outline-none resize-none text-xl font-medium"
+              className="w-full xl:px-2 xl:py-2 px-2 py-1 outline-none resize-none text-lg xl:text-xl font-medium"
             />
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-white text-black px-4 py-2 w-fit text-2xl font-medium hover:bg-black hover:text-white duration-150"
+            className="rounded-lg bg-white text-black xl:px-4 xl:py-2 px-2 py-1 w-fit text-xl xl:text-2xl font-medium hover:bg-black hover:text-white duration-150"
           >
             Submit
           </button>
