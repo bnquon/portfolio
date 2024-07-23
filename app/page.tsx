@@ -27,15 +27,19 @@ export default function App() {
           <div className="text-white w-[95vw] sm:w-[60vw] text-4xl lg:text-5xl xl:text-8xl font-semibold">
             <span className="flex justify-center items-center">
               Hey, I&apos;m Brandon &nbsp;{" "}
-              <Image
-                className="rounded-full overflow-hidden"
-                src="/realIcon.png"
-                alt="icon"
-                width={50}
-                height={50}
-              ></Image>
+              <div className="xl:w-[160px] xl:h-[160px] w-[60px] h-[60px]">
+                <Image
+                  className="rounded-full overflow-hidden"
+                  src="/realIcon.png"
+                  alt="icon"
+                  width={0}
+                  height={0}
+                  sizes="100vw"
+                  style={{ width: "100%", height: "100%" }}
+                ></Image>
+              </div>
             </span>
-            I am a <FlipWords words={words} />
+            I am a&nbsp;<FlipWords words={words} />
           </div>
           <span className="flex items-center px-4 py-2 xl:px-8 xl:py-5 gap-3 mt-5 xl:mt-10 rounded-full bg-white font-normal text-black text-lg xl:text-3xl pointer-events-auto cursor-pointer hover:bg-[#E0B0FF] duration-150">
             Let&apos;s Talk
