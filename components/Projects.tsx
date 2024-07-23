@@ -6,31 +6,31 @@ import LetterPullup from "@/components/wordReveal";
 import { motion } from "framer-motion";
 
 export const Projects = () => {
+  const projectImageReveal = {
+    initial: { left: 0, width: "100%" },
+    animate: {
+      left: "100%",
+      width: "0%",
+      transition: {
+        duration: 1.5,
+        ease: [1, 0, 0, 1],
+        delay: 0.15,
+      },
+    },
+  };
 
-    const projectImageReveal = {
-        initial: { x: 0 },
-        animate: {
-          x: 800,
-          transition: {
-            duration: 1.5,
-            ease: [1, 0, 0, 1],
-            delay: 0.15,
-          },
-        },
-      };
-    
-    const projectTextReveal = {
-        initial: { y: 100, opacity: 0 },
-        animate: {
-          y: 0,
-          opacity: 1,
-          transition: {
-            duration: 1,
-            ease: "easeOut",
-            delay: 0.15,
-          },
-        },
-      };
+  const projectTextReveal = {
+    initial: { y: 100, opacity: 0 },
+    animate: {
+      y: 0,
+      opacity: 1,
+      transition: {
+        duration: 1,
+        ease: "easeOut",
+        delay: 0.15,
+      },
+    },
+  };
   return (
     <div
       id="Projects"
@@ -55,7 +55,7 @@ export const Projects = () => {
                 Technologies: {project.technologies}
               </p>
             </motion.div>
-            <div className="w-1/2 flex flex-col relative overflow-hidden">
+            <div className="w-1/2 flex flex-col relative">
               <Image
                 src={project.image}
                 alt="placeholder"
