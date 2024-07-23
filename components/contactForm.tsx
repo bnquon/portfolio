@@ -28,7 +28,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="xl:w-1/2 w-full self-end mt-[10vh]">
+    <div className="sm:w-1/2 w-full self-end mt-[10vh]">
       <div className="w-full flex flex-col gap-8 px-6 py-8 bg-[#e0e0e0] rounded-lg">
         <form
           ref={formRef}
@@ -64,13 +64,13 @@ export const ContactForm = () => {
               placeholder="Enter your message here"
               name="message"
               required
-              rows={5}
-              className="w-full xl:px-2 xl:py-2 px-2 py-1 outline-none resize-none text-lg xl:text-xl font-medium"
+              rows={4}
+              className="w-full sm:px-2 sm:py-2 px-2 py-1 outline-none resize-none text-lg xl:text-xl font-medium"
             />
           </div>
           <button
             type="submit"
-            className="rounded-lg bg-white text-black xl:px-4 xl:py-2 px-2 py-1 w-fit text-xl xl:text-2xl font-medium hover:bg-black hover:text-white duration-150"
+            className="rounded-lg bg-white text-black sm:px-4 sm:py-2 px-3 py-2 w-fit text-xl xl:text-2xl font-medium hover:bg-black hover:text-white duration-150"
           >
             Submit
           </button>

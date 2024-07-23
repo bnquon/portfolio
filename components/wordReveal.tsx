@@ -33,21 +33,21 @@ export default function LetterPullup({
       transition: {
         duration: 1,
         ease: "easeInOut",
-        delay: 0.8,
+        delay: 0.75,
       },
     },
-  }
+  };
 
   return (
     <div className="flex w-fit relative pb-3 overflow-hidden">
+      <motion.div
+        variants={underlineReveal}
+        initial="initial"
+        whileInView="animate"
+        viewport={{ once: true }}
+        className="w-full h-1 absolute bottom-0 bg-[#E0B0FF]"
+      ></motion.div>
 
-      <motion.div 
-      variants={underlineReveal}
-      initial="initial"
-      whileInView="animate"
-      viewport={{ once: true }}
-      className="w-full h-1 absolute bottom-0 bg-[#E0B0FF]"></motion.div>
-      
       {letters.map((letter, i) => (
         <motion.h1
           key={i}
@@ -57,7 +57,7 @@ export default function LetterPullup({
           custom={i}
           viewport={{ once: true }}
           className={cn(
-            "font-display text-4xl font-semibold drop-shadow-sm md:text-6xl text-white",
+            "font-display font-semibold drop-shadow-sm text-5xl xl:text-6xl text-white",
             className
           )}
         >

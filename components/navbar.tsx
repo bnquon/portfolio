@@ -12,7 +12,7 @@ export const Navbar = () => {
               <p
                 key={index}
                 className={
-                  "text-white text-xl font-semibold px-4 py-2 hover:bg-[#505050] duration-150 rounded-full cursor-pointer"
+                  "text-white text-lg xl:text-xl font-semibold xl:px-4 xl:py-2 px-2 py-1 hover:bg-[#505050] duration-150 rounded-full cursor-pointer"
                 }
               >
                 {section}

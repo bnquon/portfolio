@@ -36,55 +36,35 @@ export const Projects = () => {
       id="Projects"
       className="relative w-screen bg-black flex justify-center"
     >
-      <div className="xl:w-[60vw] w-[95vw] py-[80px]">
+      <div className="xl:w-[60vw] sm:w-[70vw] w-[95vw] py-[80px]">
         l<LetterPullup words="Projects" delay={0.05} />
         {projects.map((project: Project, index) => (
           <div
             key={index}
-            className="flex xl:flex-row flex-col xl:mt-[12vh] mt-[8vh]"
+            className="flex sm:flex-row flex-col sm:mt-[12vh] mt-[8vh] box-border"
           >
             <motion.div
               variants={projectTextReveal}
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              className="box-border xl:w-1/2 w-full flex flex-col text-white xl:pr-10 gap-6 xl:gap-0 xl:mb-0 mb-4"
+              className="box-border xl:w-1/2 w-full flex flex-col text-white sm:pr-6 gap-6 sm:gap-0 justify-between sm:mb-0 mb-[4vh]"
             >
               <p className="text-2xl xl:text-4xl font-medium">
                 0{index + 1}. {project.name}
               </p>
-              <p className="text-xl xl:text-3xl xl:mt-[6vh]">
-                {project.description}
-              </p>
-              <p className="text-lg xl:text-2xl xl:mt-[4vh]">
+              <p className="text-xl xl:text-3xl">{project.description}</p>
+              <p className="text-lg xl:text-2xl">
                 Technologies: {project.technologies}
               </p>
-            </motion.div>
-            <div className="xl:w-1/2 w-full flex flex-col relative">
-              <Image
-                src={project.image}
-                alt="placeholder"
-                sizes="100vw"
-                width={0}
-                height={0}
-                style={{ width: "100%", height: "100%" }}
-              ></Image>
 
-              <motion.div
-                variants={projectImageReveal}
-                initial="initial"
-                whileInView={"animate"}
-                viewport={{ once: true }}
-                className="w-full h-full bg-black absolute"
-              ></motion.div>
+              {!project.liveSiteURL && !project.githubURL ? (
+                <p className="text-lg xl:text-2xl">
+                  No site or code available currently.
+                </p>
+              ) : null}
 
-              <div
-                className="w-full flex gap-8"
-                style={{
-                  marginTop:
-                    project.githubURL || project.liveSiteURL ? "2vh" : "0",
-                }}
-              >
+              <div className="w-full flex gap-8">
                 {project.githubURL ? (
                   <a
                     href={project.githubURL}
@@ -108,6 +88,24 @@ export const Projects = () => {
                   </a>
                 ) : null}
               </div>
+            </motion.div>
+            <div className="xl:w-1/2 w-full flex flex-col relative sm:min-h-[275px]">
+              <Image
+                src={project.image}
+                alt="placeholder"
+                sizes="100vw"
+                width={0}
+                height={0}
+                style={{ width: "100%", height: "100%" }}
+              ></Image>
+
+              <motion.div
+                variants={projectImageReveal}
+                initial="initial"
+                whileInView={"animate"}
+                viewport={{ once: true }}
+                className="w-full h-full bg-black absolute"
+              ></motion.div>
             </div>
           </div>
         ))}
