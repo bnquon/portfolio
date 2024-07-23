@@ -39,14 +39,14 @@ export default function LetterPullup({
   }
 
   return (
-    <div className="flex w-fit relative pb-2 overflow-hidden">
+    <div className="flex w-fit relative pb-3 overflow-hidden">
 
       <motion.div 
       variants={underlineReveal}
       initial="initial"
       whileInView="animate"
       viewport={{ once: true }}
-      className="w-full h-1 absolute bottom-0 bg-blue-300"></motion.div>
+      className="w-full h-1 absolute bottom-0 bg-[#E0B0FF]"></motion.div>
       
       {letters.map((letter, i) => (
         <motion.h1
