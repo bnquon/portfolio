@@ -37,7 +37,7 @@ export default function LetterPullup({
           custom={i}
           viewport={{ once: true }}
           className={cn(
-            "font-display text-4xl font-semibold drop-shadow-sm md:text-6xl text-[#1E90FF]",
+            "font-display text-4xl font-semibold drop-shadow-sm md:text-6xl text-white",
             className
           )}
         >
