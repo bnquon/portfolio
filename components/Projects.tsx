@@ -89,7 +89,7 @@ export const Projects = () => {
                 ) : null}
               </div>
             </motion.div>
-            <div className="xl:w-1/2 w-full flex flex-col relative sm:min-h-[275px]">
+            <div className="xl:w-1/2 w-full flex flex-col relative sm:min-h-[275px] border-2 border-white">
               <Image
                 src={project.image}
                 alt="placeholder"
