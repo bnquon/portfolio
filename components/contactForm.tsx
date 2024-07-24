@@ -28,7 +28,7 @@ export const ContactForm = () => {
   };
 
   return (
-    <div className="sm:w-1/2 w-full self-end mt-[10vh]">
+    <div className="sm:w-1/2 w-full self-end xl:mt-[16vh] sm:mt-[12vh] mt-[8vh]">
       <div className="w-full flex flex-col gap-8 px-6 py-8 bg-[#e0e0e0] rounded-lg">
         <form
           ref={formRef}

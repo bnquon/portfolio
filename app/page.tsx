@@ -73,7 +73,7 @@ export default function App() {
         <div className="xl:w-[60vw] sm:w-[70vw] w-[95vw] h-fit sm:mt-[8vh] flex flex-col py-[60px]">
           <LetterPullup words="About Me" delay={0.05} />
 
-          <div className="xl:w-1/2 sm:w-1/2 w-full self-end mt-[10vh]">
+          <div className="xl:w-1/2 sm:w-1/2 w-full self-end xl:mt-[16vh] sm:mt-[12vh] mt-[8vh]">
             <p className="xl:text-3xl text-xl sm:text-2xl xl:leading-[45px] text-white">
               I am currently a student at Simon Fraser University majoring in
               Computing Science. I am passionate about software engineering, and
@@ -101,7 +101,7 @@ export default function App() {
 
       {/* Footer */}
       <div className="relative w-screen bg-black flex justify-center">
-        <div className="xl:w-[60vw] w-[95vw] flex xl:flex-row flex-col justify-between py-[60px] xl:text-xl text-lg text-white border-t-2 border-[#727272]">
+        <div className="xl:w-[60vw] w-[95vw] mt-[8vh] flex xl:flex-row flex-col justify-between py-[60px] xl:text-xl text-lg text-white border-t-2 border-[#727272]">
           <p className="xl:text-xl text-base">
             © 2024 Brandon Quon. All Rights Reserved.
           </p>

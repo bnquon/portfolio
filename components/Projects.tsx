@@ -41,7 +41,7 @@ export const Projects = () => {
         {projects.map((project: Project, index) => (
           <div
             key={index}
-            className="flex sm:flex-row flex-col sm:mt-[12vh] mt-[8vh] box-border"
+            className="flex sm:flex-row flex-col xl:mt-[16vh] sm:mt-[12vh] mt-[8vh] box-border"
           >
             <motion.div
               variants={projectTextReveal}
