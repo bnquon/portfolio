@@ -38,7 +38,9 @@ export const ContactForm = () => {
           >
             <div className="w-full flex xl:flex-row flex-col gap-8">
               <div className="xl:w-1/2 w-full flex flex-col">
-                <p className="text-xl xl:text-2xl font-semibold text-white">Full Name</p>
+                <p className="text-xl xl:text-2xl font-semibold text-white">
+                  Full Name
+                </p>
                 <input
                   placeholder="John Doe"
                   name="fullName"
@@ -48,7 +50,9 @@ export const ContactForm = () => {
                 />
               </div>
               <div className="xl:w-1/2 w-full flex flex-col">
-                <p className="text-xl xl:text-2xl font-semibold text-white">Email</p>
+                <p className="text-xl xl:text-2xl font-semibold text-white">
+                  Email
+                </p>
                 <input
                   placeholder="JohnDoe@example.com"
                   name="email"
@@ -60,7 +64,9 @@ export const ContactForm = () => {
             </div>
 
             <div className="w-full flex flex-col">
-              <p className="xl:text-2xl text-xl font-semibold text-white">Message</p>
+              <p className="xl:text-2xl text-xl font-semibold text-white">
+                Message
+              </p>
               <textarea
                 placeholder="Enter your message here"
                 name="message"
