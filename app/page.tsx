@@ -1,10 +1,8 @@
 import React from "react";
 import { SpeedInsights } from "@vercel/speed-insights/next";
 import Image from "next/image";
-import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faArrowRight } from "@fortawesome/free-solid-svg-icons";
-import "@fortawesome/fontawesome-svg-core/styles.css";
 import { BackgroundGradientAnimation } from "@/components/gradient";
+import { CTABtn } from "@/components/CTABtn";
 import LetterPullup from "@/components/wordReveal";
 import { FlipWords } from "@/components/flipWords";
 import { ContactForm } from "@/components/contactForm";
@@ -43,10 +41,7 @@ export default function App() {
             I am a&nbsp;
             <FlipWords words={words} />
           </div>
-          <span className="flex items-center px-4 py-2 sm:px-6 sm:py-4 xl:px-8 xl:py-6 gap-3 mt-6 sm:mt-9 xl:mt-12 rounded-full bg-white font-normal text-black text-lg sm:text-xl xl:text-3xl pointer-events-auto cursor-pointer hover:bg-[#E0B0FF] duration-150">
-            Let&apos;s Talk
-            <FontAwesomeIcon icon={faArrowRight}></FontAwesomeIcon>
-          </span>
+          <CTABtn />
           <div className="flex gap-12 xl:text-2xl text-base sm:text-lg mt-6 sm:mt-9 xl:mt-12 font-semibold pointer-events-auto">
             <p className="text-white underline cursor-pointer hover:text-[#E0B0FF] duration-150">
               <a
