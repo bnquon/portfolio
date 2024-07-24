@@ -25,7 +25,7 @@ export default function App() {
           <div className="text-white w-[95vw] sm:w-[70vw] xl:w-[60vw] text-4xl lg:text-6xl xl:text-8xl font-semibold">
             <span className="flex justify-center items-center">
               Hey, I&apos;m Brandon &nbsp;{" "}
-              <div className="xl:w-[160px] xl:h-[160px] w-[60px] h-[60px] sm:w-[100px] sm:h-[100px]">
+              <div className="xl:w-[160px] xl:h-[160px] w-[60px] h-[60px] sm:w-[100px] sm:h-[100px] xl:mb-4">
                 <Image
                   className="rounded-full overflow-hidden"
                   src="/realIcon.png"
