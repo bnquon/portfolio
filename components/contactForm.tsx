@@ -71,7 +71,7 @@ export const ContactForm = () => {
             </div>
             <button
               type="submit"
-              className="rounded-xl bg-white text-black sm:px-4 sm:py-2 px-3 py-2 w-fit text-xl xl:text-2xl font-medium hover:bg-[#E0B0FF] hover:text-white duration-150"
+              className="rounded-xl bg-black text-white border-2 border-white sm:px-4 sm:py-2 px-3 py-2 w-fit text-xl xl:text-2xl font-medium hover:bg-white hover:text-black duration-150"
             >
               Submit
             </button>
