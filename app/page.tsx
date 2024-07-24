@@ -70,7 +70,7 @@ export default function App() {
         id="About"
         className="relative w-screen bg-black flex justify-center"
       >
-        <div className="xl:w-[60vw] sm:w-[70vw] w-[95vw] h-fit sm:mt-[8vh] flex flex-col py-[60px]">
+        <div className="xl:w-[60vw] sm:w-[70vw] w-[95vw] h-fit sm:mt-[6vh] flex flex-col py-[60px]">
           <LetterPullup words="About Me" delay={0.05} />
 
           <div className="xl:w-1/2 sm:w-1/2 w-full self-end xl:mt-[16vh] sm:mt-[12vh] mt-[8vh]">
