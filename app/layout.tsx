@@ -16,7 +16,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <Head>
-        <link rel="icon" href="/favicon.ico" />
+        <link rel="icon" href="icon.ico" />
       </Head>
       <body className={`${GeistSans.className}`}>{children}</body>
     </html>
