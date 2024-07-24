@@ -48,7 +48,7 @@ export const Projects = () => {
               initial="initial"
               whileInView="animate"
               viewport={{ once: true }}
-              className="box-border xl:w-1/2 w-full flex flex-col text-white sm:pr-6 gap-6 sm:gap-0 justify-between sm:mb-0 mb-[4vh]"
+              className="box-border xl:w-1/2 w-full flex flex-col text-white sm:pr-6 gap-6 sm:gap-0 justify-between sm:mb-0 mb-[4vh] relative"
             >
               <p className="text-2xl xl:text-4xl font-medium">
                 0{index + 1}. {project.name}
@@ -59,7 +59,7 @@ export const Projects = () => {
               </p>
 
               {!project.liveSiteURL && !project.githubURL ? (
-                <p className="text-lg xl:text-2xl">
+                <p className="text-white font-medium text-lg xl:text-2xl absolute bottom-0 left-0">
                   No site or code available currently.
                 </p>
               ) : null}
