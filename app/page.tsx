@@ -41,8 +41,19 @@ export default function App() {
             I am a&nbsp;
             <FlipWords words={words} />
           </div>
-          <CTABtn />
-          <div className="flex gap-12 xl:text-2xl text-base sm:text-lg mt-6 sm:mt-9 xl:mt-12 font-semibold pointer-events-auto">
+          <div className="inline-flex justify-center sm:gap-8 gap-4">
+            <CTABtn />
+            <a
+              href="https://drive.google.com/file/d/1fqwTjTTBNAKbMtcK6o4VOC03NUG-3lgG/view?usp=sharing"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <span className="flex items-center px-4 py-2 sm:px-6 sm:py-4 xl:px-8 xl:py-6 gap-3 mt-6 sm:mt-9 xl:mt-12 rounded-full bg-transparent font-normal text-white border-2 border-white text-lg sm:text-xl xl:text-3xl pointer-events-auto cursor-pointer hover:bg-[#E0B0FF] hover:border-[#E0B0FF] hover:text-black duration-150">
+                <p>Resume</p>
+              </span>
+            </a>
+          </div>
+          <div className="flex sm:gap-12 gap-6 xl:text-2xl text-base sm:text-lg mt-6 sm:mt-9 xl:mt-12 font-semibold pointer-events-auto">
             <p className="text-white underline cursor-pointer hover:text-[#E0B0FF] duration-150">
               <a
                 href="http://www.linkedin.com/in/brandon-quon"
