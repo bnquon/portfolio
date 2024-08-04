@@ -44,7 +44,7 @@ export default function App() {
           <div className="inline-flex justify-center sm:gap-8 gap-4">
             <CTABtn />
             <a
-              href="https://drive.google.com/file/d/1fqwTjTTBNAKbMtcK6o4VOC03NUG-3lgG/view?usp=sharing"
+              href="https://drive.google.com/file/d/137AsgFU0Zt7CgW8-jinxi9i3pkKG1iPt/view?usp=sharing"
               target="_blank"
               rel="noopener noreferrer"
             >
